@@ -1,5 +1,21 @@
+
 def find_rounds(numbers):
-    # TODO
+    list = []
+    rounds = 1
+    nb = numbers.copy()
+    
+    for i in range(len(nb)):
+        sub_list = []
+        for j in range(len(nb)):
+            if nb[j] == rounds:
+                #print(numb[j], rounds)
+                sub_list.append(rounds)
+                #print(sub_list)
+                rounds += 1
+        if sub_list:
+            list.append(sub_list)
+        nb = [x for x in nb if x not in sub_list]
+    return list
 
 if __name__ == "__main__":
     print(find_rounds([1, 2, 3, 4]))
