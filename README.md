@@ -1,1 +1,1 @@
-Tietorankenteet ja algoritmit
+Tietorakenteet ja algoritmit
